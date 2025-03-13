@@ -9,9 +9,7 @@ LibSGD also support loading and playing audio and will eventually include networ
 
 The library is coded in C++, but the primary public API is pure 'C', making it highly compatible with a wide range of platforms and languages.
 
-Currently supported languages include C/C++, Blitz3D, BlitzMax, Python and node.js. Support for more languages is on the way. Here comes the first import files for Purebasic 6.x x64
-
-Note that Pull Requests are not currently being accepted for this repository.
+Currently supported languages include C/C++, Blitz3D, BlitzMax, Python and node.js. Support for more languages is on the way. Here comes the files for Thonny with pyhton 3.10 and Phyton 3.13
 
 LibSGD is licensed under the Zlib/PNG license.
 
