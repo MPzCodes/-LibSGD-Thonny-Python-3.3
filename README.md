@@ -26,20 +26,26 @@ Automatic install (don work on my pc, i don´t why):
 Manually install (works fine)
 
 2) You search for the Thonny folder and exe file:
+
 for example:
+
 c:\Users\<pc-username>\AppData\Local\Programs\Thonny\thonny.exe
+
 here you search the  "site-package" folder
+
 c:\Users\<pc-username>\AppData\Local\Programs\Thonny\Lib\site-packages\
 
-In these folder you copy the 
-"libsgd" and "libsgd-0.18.1.dist-info" manually.
+In these folder you copy the "libsgd" and "libsgd-0.18.1.dist-info" manually.
 
 for example:
 
-jedi-0.19.1.dist-info
-libsgd
-libsgd-0.18.1.dist-info
-mccabe-0.7.0.dist-info
+site-packages\jedi-0.19.1.dist-info
+
+site-packages\libsgd
+
+site-packages\libsgd-0.18.1.dist-info
+
+site-packages\mccabe-0.7.0.dist-info
 
 3) The demo folder can be copied wherever you want. e.g. to the documents folder.
 Here it is only important to have the assets folder in the same folder as the demos of the PySource folder. The assets folder contains the media datas.
