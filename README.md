@@ -22,7 +22,9 @@ Automatic install (don work on my pc, i don´t why):
    go in menu of Thonny to -> Tools -> Manage plugins... -> "Install from local file"
    and choose the "libsgd-0.18.1-cp310-cp310-win_amd64.whl" file
 
+
 Manually install (works fine)
+
 2) You search for the Thonny folder and exe file:
 for example:
 c:\Users\<pc-username>\AppData\Local\Programs\Thonny\thonny.exe
