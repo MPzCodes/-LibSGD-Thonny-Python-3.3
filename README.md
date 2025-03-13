@@ -1,4 +1,4 @@
-# -LibSGD-Thonny-Python-3.3
+# -LibSGD-Thonny-Python-3.13
 libSGD to use with Thonny or Phyton 3.13
 
 Welcome to LibSGD for Phyton
