@@ -1,3 +1,6 @@
+# File for libsgd Version 0.18.1 march 2025 
+#
+# Version 0.1, show to create a sphere manually (sgd_createSphere) or with the internal command (sgd.createSphereMesh)
 
 from libsgd import sgd
 
@@ -85,4 +88,4 @@ while not sgd.pollEvents():
     sgd.present()
     
 sgd.terminate()   
- 
+##### bye #####

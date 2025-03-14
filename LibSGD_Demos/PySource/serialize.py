@@ -1,3 +1,7 @@
+# File for libsgd Version 0.18.1 march 2025 
+#
+# Version 0.1, program to create a scene and save it and load it again as scene "test-scene.json"
+
 from libsgd import sgd
 
 import random
@@ -29,9 +33,9 @@ WORLD_SIZE = 100
 NUM_TREES = 5000
 
 for i in range(NUM_TREES):
-	treeModel = sgd.createModel(treeMeshes[random.randint(0, 2)])
-	sgd.moveEntity(treeModel, random.uniform(-WORLD_SIZE, WORLD_SIZE), 0, random.uniform(-WORLD_SIZE, WORLD_SIZE))
-	sgd.turnEntity(treeModel, 0, random.uniform(-math.pi, math.pi), 0)
+    treeModel = sgd.createModel(treeMeshes[random.randint(0, 2)])
+    sgd.moveEntity(treeModel, random.uniform(-WORLD_SIZE, WORLD_SIZE), 0, random.uniform(-WORLD_SIZE, WORLD_SIZE))
+    sgd.turnEntity(treeModel, 0, random.uniform(-math.pi, math.pi), 0)
 
 start.createPlayer(0)
 sgd.moveEntity(start.player, 0.0, 10.0, 0)
@@ -39,18 +43,19 @@ sgd.moveEntity(start.player, 0.0, 10.0, 0)
 sgd.setEntityName(start.player, "Player")
 sgd.setEntityName(start.camera, "Camera")
 
-#sgd.saveScene("~/Desktop/test-scene.json")
-#sgd.resetScene(True)
-#sgd.loadScene("~/Desktop/test-scene.json")
+sgd.saveScene("~/Desktop/test-scene.json")
+sgd.resetScene(True)
+sgd.loadScene("~/Desktop/test-scene.json")
 
 start.player = sgd.findEntityChild(0,"Player")
 start.camera = sgd.findEntityChild(0,"Camera")
 
 while not (sgd.pollEvents() & sgd.EVENT_MASK_CLOSE_CLICKED):
-	start.flyPlayer(.25)
+    start.playerFly(.25)
 
-	sgd.renderScene()
+    sgd.renderScene()
 
-	sgd.present()
+    sgd.present()
 
 sgd.terminate()
+##### bye #####

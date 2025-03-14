@@ -1,3 +1,7 @@
+# File for libsgd Version 0.18.1 march 2025 
+#
+# Version 0.1, show moving of a men
+
 from libsgd import sgd
 
 import start
@@ -60,4 +64,4 @@ while not (sgd.pollEvents() & sgd.EVENT_MASK_CLOSE_CLICKED):
     sgd.present()
 
 sgd.terminate()
-
+##### bye #####

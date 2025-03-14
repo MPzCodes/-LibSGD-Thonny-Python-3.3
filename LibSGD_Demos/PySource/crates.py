@@ -1,3 +1,6 @@
+# File for libsgd Version 0.18.1 march 2025 
+#
+# Version 0.1, show some blocks in a 3d Space, with moving
 
 from libsgd import sgd
 
@@ -40,8 +43,9 @@ for x in range(-20,21):
         sgd.moveEntity (crateModel,x*1.25,30-math.sqrt(x*x+z*z),z*1.25)
 
 while not (sgd.pollEvents() & sgd.EVENT_MASK_CLOSE_CLICKED):
-    start.flyPlayer(.1)
+    start.playerFly(.1)
     sgd.renderScene()
     sgd.present()
 
 sgd.terminate()
+###Bye###

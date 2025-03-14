@@ -1,21 +1,25 @@
+# File for libsgd Version 0.18.1 march 2025 
+#
+# Version 0.1, show to use anime with blend effects between movings
+
 from libsgd import sgd
 
 # animblend.bb to animblend.py
 
 """
-sequence# | frames |	description 
----------	 ------   -----------
-0		72 	 	death
-1 		 60 		idle	
-2     		 27 	        jump
-3 		 17		run_fast
-4		 21 		run_left
-5 		 21		run_right
-6 		 23 		run_slow
-7 		 36 		standard_walk
-8 		 32 		walk
-9 		 32 		walk_left
-10 		 29		walk_right		
+sequence# | frames | description 
+--------------------------
+0           72       death
+1           60       idle 
+2           27       jump
+3           17       run_fast
+4           21       run_left
+5           21       run_right
+6           23       run_slow
+7           36       standard_walk
+8           32       walk
+9           32       walk_left
+10          29       walk_right
 """
 
 # app from here
@@ -24,7 +28,7 @@ sgd.init()
 
 seq0 = 0
 time0 = 0.0
-time0Step = 0.0	
+time0Step = 0.0
 seq1 = 0
 time1 = 0.0
 time1Step = 0.0 
@@ -33,7 +37,7 @@ blendStep = 0.0
 useBlend = 1
 
 # window
-sgd.createWindow(800, 600, "libsgd", 0)
+sgd.createWindow(800, 600, "animblend", 0)
 sgd.setClearColor(0.1,0.2,0.3,1)
 
 # camera
@@ -96,21 +100,20 @@ while (sgd.pollEvents() & sgd.EVENT_MASK_CLOSE_CLICKED) == 0:
         time1Step = 0
         blend = 0
         blendStep = 0
-	
+
     #Set base animation
     time0 = time0 + time0Step
     sgd.animateModel(model,seq0,time0,2,1)
 
     if blend > 0: 
-		#Appy blend
+        #Appy blend
         time1 = time1 + time1Step
         sgd.animateModel(model,seq1,time1,2,blend)
-		
+
     sgd.clear2D()
     sgd.draw2DText("Arrow keys/Shift to run. Using blend:" + str(useBlend) + " (space to toggle)",0,0)
     sgd.renderScene()
     sgd.present()
 
 sgd.terminate()
-
 ##### bye #####

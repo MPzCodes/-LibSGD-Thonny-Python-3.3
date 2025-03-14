@@ -1,3 +1,7 @@
+# File for libsgd Version 0.18.1 march 2025 
+#
+# Version 0.1, shows a nice helmet
+
 from libsgd import sgd
 
 import start
@@ -47,3 +51,4 @@ while not sgd.pollEvents():
     sgd.present()
 
 sgd.terminate()
+###End###
